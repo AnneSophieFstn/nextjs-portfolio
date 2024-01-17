@@ -1,26 +1,36 @@
 interface Project {
-  title: string,
-  description: string,
-  href?: string,
-  imgSrc?: string,
+  title: string
+  description: string
+  href?: string
+  imgSrc?: string
+  dataBubble: Array<any>
 }
 
 const projectsData: Project[] = [
   {
-    title: 'A Search Engine',
-    description: `What if you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
+    title: "Ball'n co",
+    description: `Application web, mobile qui permet de réunir les fans du basket.
+
+`,
+    imgSrc: '/static/images/ballnco.png',
+    href: 'https://github.com/AnneSophieFstn/basketball-app',
+    dataBubble: ['nodejs', 'react', 'reactnative'],
   },
   {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten headphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
+    title: 'Croix-Rouge Française de la Réunion',
+    description: `Refonte complète du site internet officiel de la Croix-Rouge française de la Réunion.
+`,
+    imgSrc: '/static/images/crf.jpg',
+    href: 'https://reunion.croix-rouge.fr/',
+    dataBubble: ['wordpress'],
+  },
+  {
+    title: "BACKEND - Gestion réservation d'ordinateurs",
+    description: `Créer une application sécurisée qui permet de gérer l'attribution des postes informatiques aux visiteurs d'un centre culturel sur les horaires d'ouverture.
+`,
+    imgSrc: '/static/images/logo/node-js.png',
+    href: 'https://github.com/AnneSophieFstn/nodejs-api',
+    dataBubble: ['nodejs', 'react'],
   },
 ]
 

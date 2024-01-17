@@ -1,91 +1,58 @@
 import Link from '@/components/Link'
-import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
-import { formatDate } from 'pliny/utils/formatDate'
-import NewsletterForm from 'pliny/ui/NewsletterForm'
+import SocialIcon from '@/components/social-icons'
+import Image from 'next/image'
+import Moi from '../public/static/images/annesophie-faustino.jpeg'
 
-const MAX_DISPLAY = 5
-
-export default function Home({ posts }) {
+export default function Home() {
   return (
     <>
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Latest
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
+      <div className="items-center justify-center space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
+        <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
+          <h3 className="text-2xl font-bold">Bienvenue, je suis</h3>
+          <h1 className="mb-2 text-8xl font-bold">Anne-Sophie</h1>
+          <h1 className="mb-2 text-8xl font-bold">Faustino</h1>
+          <span>
+            <span className="text-4xl font-bold">Développeuse web </span>
+            habitant sur l'île de la Réunion. 🌋🌴☀️
+          </span>
+          <div className="mt-5 flex flex-wrap gap-2">
+            <Link
+              className="ring-offset-background focus-visible:ring-ring text-secondary-foreground inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100"
+              href="https://github.com/AnneSophieFstn"
+            >
+              <SocialIcon kind="github" href="https://github.com/AnneSophieFstn" size={5} />
+              Github
+            </Link>
+            <Link
+              className="ring-offset-background focus-visible:ring-ring text-secondary-foreground inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100"
+              href="https://www.linkedin.com/in/annesophie-faustino/"
+            >
+              <SocialIcon
+                kind="linkedin"
+                href="https://www.linkedin.com/in/annesophie-faustino/"
+                size={5}
+              />
+              LinkedIn
+            </Link>
+            <Link
+              className="ring-offset-background focus-visible:ring-ring text-secondary-foreground inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100"
+              href="mailto:annesophie.faustino@gmail.com"
+            >
+              <SocialIcon kind="mail" href={`mailto:annesophie.faustino@gmail.com`} size={5} />
+              annesophie.faustino@gmail.com
+            </Link>
+          </div>
         </div>
-        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {!posts.length && 'No posts found.'}
-          {posts.slice(0, MAX_DISPLAY).map((post) => {
-            const { slug, date, title, summary, tags } = post
-            return (
-              <li key={slug} className="py-12">
-                <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-                    <dl>
-                      <dt className="sr-only">Published on</dt>
-                      <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
-                      </dd>
-                    </dl>
-                    <div className="space-y-5 xl:col-span-3">
-                      <div className="space-y-6">
-                        <div>
-                          <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                            <Link
-                              href={`/blog/${slug}`}
-                              className="text-gray-900 dark:text-gray-100"
-                            >
-                              {title}
-                            </Link>
-                          </h2>
-                          <div className="flex flex-wrap">
-                            {tags.map((tag) => (
-                              <Tag key={tag} text={tag} />
-                            ))}
-                          </div>
-                        </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">
-                          {summary}
-                        </div>
-                      </div>
-                      <div className="text-base font-medium leading-6">
-                        <Link
-                          href={`/blog/${slug}`}
-                          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                          aria-label={`Read more: "${title}"`}
-                        >
-                          Read more &rarr;
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </li>
-            )
-          })}
-        </ul>
+        <div className="flex flex-col items-center space-x-2 pt-8">
+          <Image
+            className="rounded-full"
+            src={Moi.src}
+            alt="face of anne-sophie"
+            width={500}
+            height={500}
+          />
+        </div>
       </div>
-      {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end text-base font-medium leading-6">
-          <Link
-            href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="All posts"
-          >
-            All Posts &rarr;
-          </Link>
-        </div>
-      )}
-      {siteMetadata.newsletter?.provider && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )}
     </>
   )
 }

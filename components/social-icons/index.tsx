@@ -8,6 +8,15 @@ import {
   Mastodon,
   Threads,
   Instagram,
+  Localisation,
+  NodeJs,
+  React,
+  Figma,
+  Adobe,
+  Symfony,
+  MySQL,
+  Wordpress,
+  ReactNative,
 } from './icons'
 
 const components = {
@@ -20,6 +29,15 @@ const components = {
   mastodon: Mastodon,
   threads: Threads,
   instagram: Instagram,
+  localisation: Localisation,
+  nodejs: NodeJs,
+  react: React,
+  figma: Figma,
+  adobe: Adobe,
+  symfony: Symfony,
+  mysql: MySQL,
+  wordpress: Wordpress,
+  reactnative: ReactNative,
 }
 
 type SocialIconProps = {
