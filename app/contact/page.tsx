@@ -19,21 +19,21 @@ export default function Contact() {
         </p>
         <div>
           <Link
-            className="ring-offset-background focus-visible:ring-ring text-secondary-foreground mr-5 inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100"
+            className="ring-offset-background focus-visible:ring-ring text-secondary-foreground mr-5 inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100 max-xl:mb-2 max-sm:mb-2"
             href="https://github.com/AnneSophieFstn"
           >
             <SocialIcon kind="localisation" href="https://github.com/AnneSophieFstn" size={5} />
             Saint-Benoit, La Réunion
           </Link>
           <Link
-            className="ring-offset-background focus-visible:ring-ring text-secondary-foreground mr-5 inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100"
+            className="ring-offset-background focus-visible:ring-ring text-secondary-foreground mr-5 inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100 max-xl:mb-2 max-sm:mb-2"
             href="https://github.com/AnneSophieFstn"
           >
             <SocialIcon kind="github" href="https://github.com/AnneSophieFstn" size={5} />
             Github
           </Link>
           <Link
-            className="ring-offset-background focus-visible:ring-ring text-secondary-foreground mr-5 inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100"
+            className="ring-offset-background focus-visible:ring-ring text-secondary-foreground mr-5 inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100 max-xl:mb-2 max-sm:mb-2"
             href="https://www.linkedin.com/in/annesophie-faustino/"
           >
             <SocialIcon
@@ -44,7 +44,7 @@ export default function Contact() {
             LinkedIn
           </Link>
           <Link
-            className="ring-offset-background focus-visible:ring-ring text-secondary-foreground mr-5 inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100"
+            className="ring-offset-background focus-visible:ring-ring text-secondary-foreground mr-5 inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100 max-xl:mb-2 max-sm:mb-2"
             href="mailto:annesophie.faustino@gmail.com"
           >
             <SocialIcon kind="mail" href={`mailto:annesophie.faustino@gmail.com`} size={5} />

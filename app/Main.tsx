@@ -6,13 +6,13 @@ import Moi from '../public/static/images/annesophie-faustino.jpeg'
 export default function Home() {
   return (
     <>
-      <div className="items-center justify-center space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-        <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
+      <div className="flex-col-reverse items-center justify-center space-y-2 max-xl:flex xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
+        <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2 ">
           <h3 className="text-2xl font-bold">Bienvenue, je suis</h3>
-          <h1 className="mb-2 text-8xl font-bold">Anne-Sophie</h1>
-          <h1 className="mb-2 text-8xl font-bold">Faustino</h1>
+          <h1 className="mb-2 text-8xl font-bold max-sm:text-5xl">Anne-Sophie</h1>
+          <h1 className="mb-2 text-8xl font-bold max-sm:text-4xl">Faustino</h1>
           <span>
-            <span className="text-4xl font-bold">Développeuse web </span>
+            <span className="text-4xl font-bold max-sm:text-3xl">Développeuse web </span>
             habitant sur l'île de la Réunion. 🌋🌴☀️
           </span>
           <div className="mt-5 flex flex-wrap gap-2">

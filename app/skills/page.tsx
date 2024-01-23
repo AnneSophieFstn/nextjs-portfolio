@@ -20,9 +20,9 @@ export default function Skills() {
           Skills
         </h1>
       </div>
-      <div className=" flex justify-between">
+      <div className="flex flex-wrap justify-between">
         <div className="mt-5">
-          <h3 className="text-4xl font-bold">Design</h3>
+          <h3 className="text-4xl font-bold max-md:text-2xl">Design</h3>
           <ul className="mt-2">
             <li className="mb-2 flex items-center justify-start">
               <Image
@@ -47,7 +47,7 @@ export default function Skills() {
           </ul>
         </div>
         <div className="mt-5">
-          <h3 className="text-4xl font-bold">Front-end</h3>
+          <h3 className="text-4xl font-bold max-md:text-2xl">Front-end</h3>
           <ul className="mt-2">
             <li className="mb-2 flex items-center justify-start">
               <Image
@@ -81,8 +81,9 @@ export default function Skills() {
             </li>
           </ul>
         </div>
+
         <div className="mt-5">
-          <h3 className="text-4xl font-bold">Back-end</h3>
+          <h3 className="text-4xl font-bold max-md:text-2xl">Back-end</h3>
           <ul className="mt-2">
             <li className="mb-2 flex items-center justify-start">
               <Image
@@ -117,7 +118,7 @@ export default function Skills() {
           </ul>
         </div>
         <div className="mt-5">
-          <h3 className="text-4xl font-bold">Autres</h3>
+          <h3 className="text-4xl font-bold max-md:text-2xl">Autres</h3>
           <ul className="mt-2">
             <li className="mb-2 flex items-center justify-start">
               <Image
