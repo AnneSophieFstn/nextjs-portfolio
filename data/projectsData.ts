@@ -8,12 +8,12 @@ interface Project {
 
 const projectsData: Project[] = [
   {
-    title: "Ball'n co",
-    description: `Application web, mobile qui permet de réunir les fans du basket.
+    title: "Nout'Basket",
+    description: `Application web et mobile pour les amateurs de basket.
 
 `,
-    imgSrc: '/static/images/ballnco.png',
-    href: 'https://github.com/AnneSophieFstn/basketball-app',
+    imgSrc: '/static/images/Mockups-nout-basket.png',
+    href: 'https://github.com/AnneSophieFstn/nodejs-api-noutbasket',
     dataBubble: ['nodejs', 'react', 'reactnative'],
   },
   {
