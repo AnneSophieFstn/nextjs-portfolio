@@ -17,20 +17,20 @@ const projectsData: Project[] = [
     dataBubble: ['nodejs', 'react', 'reactnative'],
   },
   {
-    title: 'Croix-Rouge Française de la Réunion',
-    description: `Refonte complète du site internet officiel de la Croix-Rouge française de la Réunion.
+    title: 'Prestashop',
+    description: `Application web destinée à promouvoir les auto-entrepreneurs et les prestataires locaux à La Réunion.
 `,
-    imgSrc: '/static/images/crf.jpg',
-    href: 'https://reunion.croix-rouge.fr/',
-    dataBubble: ['wordpress'],
+    imgSrc: '/static/images/Mockups-prestashop.png',
+    href: 'https://github.com/AnneSophieFstn/prestashop',
+    dataBubble: ['nodejs', 'react'],
   },
   {
     title: "BACKEND - Gestion réservation d'ordinateurs",
-    description: `Créer une application sécurisée qui permet de gérer l'attribution des postes informatiques aux visiteurs d'un centre culturel sur les horaires d'ouverture.
+    description: `Création d'une API sécurisée qui permet de gérer l'attribution des postes informatiques aux visiteurs d'un centre culturel sur les horaires d'ouverture.
 `,
     imgSrc: '/static/images/logo/node-js.png',
     href: 'https://github.com/AnneSophieFstn/nodejs-api',
-    dataBubble: ['nodejs', 'react'],
+    dataBubble: ['nodejs'],
   },
 ]
 
