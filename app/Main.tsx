@@ -11,10 +11,8 @@ export default function Home() {
           <h3 className="text-2xl font-bold">Bienvenue, je suis</h3>
           <h1 className="mb-2 text-8xl font-bold max-sm:text-5xl">Anne-Sophie</h1>
           <h1 className="mb-2 text-8xl font-bold max-sm:text-4xl">Faustino</h1>
-          <span>
-            <span className="text-4xl font-bold max-sm:text-3xl">Développeuse web </span>
-            habitant sur l'île de la Réunion. 🌋🌴☀️
-          </span>
+          <span className="text-4xl font-bold max-sm:text-3xl">Développeuse web et mobile </span>
+          <span>habitant sur l'île de la Réunion. 🌋🌴☀️</span>
           <div className="mt-5 flex flex-wrap gap-2">
             <Link
               className="ring-offset-background focus-visible:ring-ring text-secondary-foreground inline-flex h-9 items-center justify-center rounded-md bg-blue-600 px-3 text-sm font-medium text-white transition-colors hover:bg-blue-600/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:text-gray-100"

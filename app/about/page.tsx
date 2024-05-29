@@ -28,7 +28,7 @@ export default function AboutPage() {
               Anne-Sophie FAUSTINO
             </h3>
             <div className="text-center text-primary-500 dark:text-primary-500">
-              Recherche poste Développeuse Web
+              Recherche poste Développeuse Web et/ou mobile
             </div>
             <div className="flex space-x-3 pt-6">
               <SocialIcon kind="mail" href={`mailto:annesophie.faustino@gmail.com`} />
@@ -38,12 +38,12 @@ export default function AboutPage() {
           </div>
           <div className="prose max-w-none pb-8 pt-8 dark:prose-invert xl:col-span-2">
             <p>
-              Jeune développeuse web passionnée par les technologies et la création d'application
-              métiers modernes et interactifs.
+              Jeune développeuse web et mobile passionnée par les technologies et la création
+              d'application métiers modernes et interactifs.
             </p>
             <p>
-              Spécialisée dans les technologies telles que HTML, CSS, JavaScript, PHP et les
-              frameworks tels que Laravel, React et VueJs.
+              Spécialisée dans les technologies telles que JavaScript, PHP et les frameworks tels
+              que Symfony, React et React Native.
             </p>
             <p>
               J'aime travailler en équipe et je suis toujours à la recherche de nouveaux défis pour

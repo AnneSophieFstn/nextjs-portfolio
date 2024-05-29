@@ -13,7 +13,7 @@ const projectsData: Project[] = [
 
 `,
     imgSrc: '/static/images/Mockups-nout-basket.png',
-    href: 'https://github.com/AnneSophieFstn/nodejs-api-noutbasket',
+    href: 'https://github.com/AnneSophieFstn/react-native-noutbasket',
     dataBubble: ['nodejs', 'react', 'reactnative'],
   },
   {
